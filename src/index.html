@@ -22,28 +22,26 @@
     <div class="container-fluid">
         <div class="row">
             <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                    <div class="col">
-                        <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                    </div>
+                <div class="col">
+                    <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </div>
 
-                    <div class="col d-flex justify-content-end">
-                        <button type="button" class="btn btn-success me-2">Create a new post</button>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <i class="fa-solid fa-gear"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                                <li><a class="dropdown-item" href="#">Data and Privacy</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
-                            </ul>
-                        </div>
+                <div class="col d-flex justify-content-end">
+                    <button type="button" class="btn btn-success me-2">Create a new post</button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                            <li><a class="dropdown-item" href="#">Data and Privacy</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -51,23 +49,66 @@
 
         <div class="row">
             <div class="col d-flex justify-content-center">
-
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                        <button class="nav-link active" id="grid-view" data-bs-toggle="tab"
+                            data-bs-target="#grid-view-tab-pane" type="button" role="tab" aria-controls="grid-view-tab-pane"
                             aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
-                            aria-selected="false"><i class="fa-solid fa-square"></i></button>
+                        <button class="nav-link" id="card-view" data-bs-toggle="tab" data-bs-target="#card-view-tab-pane"
+                            type="button" role="tab" aria-controls="card-view-tab-pane" aria-selected="false"><i
+                                class="fa-solid fa-square"></i></button>
                     </li>
                 </ul>
-
             </div>
         </div>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="grid-view-pane" role="tabpanel" aria-labelledby="gird-view-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col g-0 m-1">
+                        <img src="../media/picture_dog_one.jpg"" alt=" dog" class="img-fluid resize">
+                    </div>
+
+                    <div class="col g-0 m-1">
+                        <img src="../media/picture_fish_two.jpg"" alt=" dog" class="img-fluid resize">
+                    </div>
+                    <div class="col g-0 m-1">
+                        <img src="../media/picture_turtle_three.jpg"" alt=" dog" class="img-fluid resize">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col g-0 m-1">
+                        <img src="../media/picture_flower_four.jpg"" alt=" dog" class="img-fluid resize">
+                    </div>
+                    <div class="col g-0 m-1">
+                        <img src="../media/picture_sunset_five.jpg"" alt=" dog" class="img-fluid resize">
+                    </div>
+                    <div class="col g-0 m-1">
+                        <img src="../media/picture_beach_six.jpg"" alt=" dog" class="img-fluid resize">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col g-0 m-1">
+                        <img src="../media/picture_car_seven.jpg"" alt=" dog" class="img-fluid resize">
+                    </div>
+                    <div class="col g-0 m-1">
+                        <img src="../media/picture_golang_eight.jpg"" alt=" dog" class="img-fluid resize">
+                    </div>
+                    <div class="col g-0 m-1">
+                        <img src="../media/picture_cake_nine.jpg"" alt=" dog" class="img-fluid resize">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="card-view-pane" role="tabpanel" aria-labelledby="card-view-tab" tabindex="0">
+            chipi</div>
     </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
