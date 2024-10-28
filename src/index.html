@@ -27,7 +27,24 @@
                 </div>
 
                 <div class="col d-flex justify-content-end">
-                    <button type="button" class="btn btn-success me-2">Create a new post</button>
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -51,63 +68,110 @@
             <div class="col d-flex justify-content-center">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="grid-view" data-bs-toggle="tab"
-                            data-bs-target="#grid-view-tab-pane" type="button" role="tab" aria-controls="grid-view-tab-pane"
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
                             aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="card-view" data-bs-toggle="tab" data-bs-target="#card-view-tab-pane"
-                            type="button" role="tab" aria-controls="card-view-tab-pane" aria-selected="false"><i
-                                class="fa-solid fa-square"></i></button>
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false"><i class="fa-solid fa-square"></i></button>
                     </li>
                 </ul>
             </div>
         </div>
 
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="grid-view-pane" role="tabpanel" aria-labelledby="gird-view-tab"
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                 tabindex="0">
-                <div class="row">
-                    <div class="col g-0 m-1">
-                        <img src="../media/picture_dog_one.jpg"" alt=" dog" class="img-fluid resize">
-                    </div>
+                <!-- <div class="container-fluid">
+                    <div class="row">
+                        <div class="col g-0 m-1">
+                            <img src="../media/picture_dog_one.jpg"" alt=" dog" class="img-fluid resize">
+                        </div>
 
-                    <div class="col g-0 m-1">
-                        <img src="../media/picture_fish_two.jpg"" alt=" dog" class="img-fluid resize">
+                        <div class="col g-0 m-1">
+                            <img src="../media/picture_fish_two.jpg"" alt=" dog" class="img-fluid resize">
+                        </div>
+                        <div class="col g-0 m-1">
+                            <img src="../media/picture_turtle_three.jpg"" alt=" dog" class="img-fluid resize">
+                        </div>
                     </div>
-                    <div class="col g-0 m-1">
-                        <img src="../media/picture_turtle_three.jpg"" alt=" dog" class="img-fluid resize">
+                    <div class="row">
+                        <div class="col g-0 m-1">
+                            <img src="../media/picture_flower_four.jpg"" alt=" dog" class="img-fluid resize">
+                        </div>
+                        <div class="col g-0 m-1">
+                            <img src="../media/picture_sunset_five.jpg"" alt=" dog" class="img-fluid resize">
+                        </div>
+                        <div class="col g-0 m-1">
+                            <img src="../media/picture_beach_six.jpg"" alt=" dog" class="img-fluid resize">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col g-0 m-1">
-                        <img src="../media/picture_flower_four.jpg"" alt=" dog" class="img-fluid resize">
+                    <div class="row">
+                        <div class="col g-0 m-1">
+                            <img src="../media/picture_car_seven.jpg"" alt=" dog" class="img-fluid resize">
+                        </div>
+                        <div class="col g-0 m-1">
+                            <img src="../media/picture_golang_eight.jpg"" alt=" dog" class="img-fluid resize">
+                        </div>
+                        <div class="col g-0 m-1">
+                            <img src="../media/picture_cake_nine.jpg"" alt=" dog" class="img-fluid resize">
+                        </div>
                     </div>
-                    <div class="col g-0 m-1">
-                        <img src="../media/picture_sunset_five.jpg"" alt=" dog" class="img-fluid resize">
-                    </div>
-                    <div class="col g-0 m-1">
-                        <img src="../media/picture_beach_six.jpg"" alt=" dog" class="img-fluid resize">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col g-0 m-1">
-                        <img src="../media/picture_car_seven.jpg"" alt=" dog" class="img-fluid resize">
-                    </div>
-                    <div class="col g-0 m-1">
-                        <img src="../media/picture_golang_eight.jpg"" alt=" dog" class="img-fluid resize">
-                    </div>
-                    <div class="col g-0 m-1">
-                        <img src="../media/picture_cake_nine.jpg"" alt=" dog" class="img-fluid resize">
+                </div> -->
+            </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="container-fluid">
+                <div class="row justify-content-center mt-3">
+                    <div class="col-5 d-grid gap-4 justify-content-center">
+                        <div class="card rounded-0">
+                            <div class="card-header d-flex justify-content-between bg-white mt-1">
+                                <div class="fw-bold">A suspicious looking dog...</div>
+                                <div>09/10</div>
+                            </div>
+                            <img src="../media/picture_dog_one.jpg" class="card-img-top rounded-0" alt="dog">
+                            <div class="card-body">
+                                <p class="card-text fw-bold mb-2">Liked by 4Geeks, CuteDogs and 7 others</p>
+                                <div class="card-text">Or is he suspicious of you?</div>
+                            </div>
+                        </div>
+
+                        <div class="card rounded-0">
+                            <div class="card-header d-flex justify-content-between bg-white">
+                                <div class="fw-bold">Taking a peek...</div>
+                                <div>09/10</div>
+                            </div>
+                            <img src="../media/picture_fish_two.jpg" class="card-img-top rounded-0" alt="fish">
+                            <div class="card-body">
+                                <p class="card-text fw-bold mb-2">Liked by Bootstrap5,html and 35 others</p>
+                                <div class="card-text">Widely known to live in anemones, it is still not clear how
+                                    clownfish survive the anemone's poison</div>
+                            </div>
+                        </div>
+
+                        <div class="card rounded-0">
+                            <div class="card-header d-flex justify-content-between bg-white">
+                                <div class="fw-bold">Beyond the sea</div>
+                                <div>09/10</div>
+                            </div>
+                            <img src="../media/picture_turtle_three.jpg" class="card-img-top rounded-0" alt="turtle">
+                            <div class="card-body">
+                                <p class="card-text fw-bold mb-2">Liked by Crush, Dory and 78 others</p>
+                                <div class="card-text">There are only 7 species of sea turtles: Leatherback, Green
+                                    Turtle, Hawksbill, Loggerhead, Olive Ridley, Kemp's Ridley and Flatback.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
-        <div class="tab-pane fade" id="card-view-pane" role="tabpanel" aria-labelledby="card-view-tab" tabindex="0">
-            chipi</div>
     </div>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
