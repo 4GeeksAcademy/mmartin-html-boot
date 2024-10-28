@@ -20,8 +20,8 @@ def serve_dir_directory_index():
         out = subprocess.Popen(['python3','app.py'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         stdout,stderr = out.communicate()
         return stdout if out.returncode == 0 else f"<pre style='color: red;'>{stdout.decode('utf-8')}</pre>"
-    if os.path.exists("index.html"):
-        return send_from_directory(static_file_dir, 'index.html')
+    if os.path.exists("src/index.html"):
+        return send_from_directory(static_file_dir, 'src/index.html')
     else:
         return "<h1 align='center'>404</h1><h2 align='center'>Missing index.html file</h2><p align='center'><img src='https://github.com/4GeeksAcademy/html-hello/blob/main/.vscode/rigo-baby.jpeg?raw=true' /></p>"
 
@@ -29,7 +29,7 @@ def serve_dir_directory_index():
 @app.route('/<path:path>', methods=['GET'])
 def serve_any_other_file(path):
     if not os.path.isfile(os.path.join(static_file_dir, path)):
-        path = os.path.join(path, 'index.html')
+        path = os.path.join(path, 'src/index.html')
     response = send_from_directory(static_file_dir, path)
     response.cache_control.max_age = 0 # avoid cache memory
     return response

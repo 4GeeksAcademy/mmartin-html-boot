@@ -27,24 +27,42 @@
                 </div>
 
                 <div class="col d-flex justify-content-end">
-                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Create a new post</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 fw-bolder" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label class="fw-bold mb-2" for="caption-area">Caption:</label>
+                                            <textarea class="form-control" id="caption-area" rows="4"></textarea>
+                                        </div>
+                                    </form>
+                                    <div class="row justify-content-start mt-2">
+                                        <div class="col d-flex">
+                                            <button type="button" class="btn btn-light border m-1"><i
+                                                    class="fa-solid fa-camera"></i></button>
+                                            <button type="button" class="btn btn-light border m-1"><i
+                                                    class="fa-solid fa-location-dot"></i></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                              ...
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                          </div>
                         </div>
-                      </div>
+                    </div>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -84,7 +102,7 @@
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                 tabindex="0">
-                <!-- <div class="container-fluid">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col g-0 m-1">
                             <img src="../media/picture_dog_one.jpg"" alt=" dog" class="img-fluid resize">
@@ -119,58 +137,150 @@
                             <img src="../media/picture_cake_nine.jpg"" alt=" dog" class="img-fluid resize">
                         </div>
                     </div>
-                </div> -->
-            </div>
-
-        </div>
-
-        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <div class="container-fluid">
-                <div class="row justify-content-center mt-3">
-                    <div class="col-5 d-grid gap-4 justify-content-center">
-                        <div class="card rounded-0">
-                            <div class="card-header d-flex justify-content-between bg-white mt-1">
-                                <div class="fw-bold">A suspicious looking dog...</div>
-                                <div>09/10</div>
-                            </div>
-                            <img src="../media/picture_dog_one.jpg" class="card-img-top rounded-0" alt="dog">
-                            <div class="card-body">
-                                <p class="card-text fw-bold mb-2">Liked by 4Geeks, CuteDogs and 7 others</p>
-                                <div class="card-text">Or is he suspicious of you?</div>
-                            </div>
-                        </div>
-
-                        <div class="card rounded-0">
-                            <div class="card-header d-flex justify-content-between bg-white">
-                                <div class="fw-bold">Taking a peek...</div>
-                                <div>09/10</div>
-                            </div>
-                            <img src="../media/picture_fish_two.jpg" class="card-img-top rounded-0" alt="fish">
-                            <div class="card-body">
-                                <p class="card-text fw-bold mb-2">Liked by Bootstrap5,html and 35 others</p>
-                                <div class="card-text">Widely known to live in anemones, it is still not clear how
-                                    clownfish survive the anemone's poison</div>
-                            </div>
-                        </div>
-
-                        <div class="card rounded-0">
-                            <div class="card-header d-flex justify-content-between bg-white">
-                                <div class="fw-bold">Beyond the sea</div>
-                                <div>09/10</div>
-                            </div>
-                            <img src="../media/picture_turtle_three.jpg" class="card-img-top rounded-0" alt="turtle">
-                            <div class="card-body">
-                                <p class="card-text fw-bold mb-2">Liked by Crush, Dory and 78 others</p>
-                                <div class="card-text">There are only 7 species of sea turtles: Leatherback, Green
-                                    Turtle, Hawksbill, Loggerhead, Olive Ridley, Kemp's Ridley and Flatback.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="container-fluid">
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-5 d-grid gap-4 justify-content-center">
+                            <div class="card rounded-0">
+                                <div class="card-header d-flex justify-content-between bg-white mt-1">
+                                    <div class="fw-bold">A suspicious looking dog...</div>
+                                    <div>09/10</div>
+                                </div>
+                                <img src="../media/picture_dog_one.jpg" class="card-img-top rounded-0" alt="dog">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold mb-2">Liked by 4Geeks, CuteDogs and 7 others</p>
+                                    <div class="card-text">Or is he suspicious of you?</div>
+                                </div>
+                            </div>
+
+                            <div class="card rounded-0">
+                                <div class="card-header d-flex justify-content-between bg-white">
+                                    <div class="fw-bold">Taking a peek...</div>
+                                    <div>09/10</div>
+                                </div>
+                                <img src="../media/picture_fish_two.jpg" class="card-img-top rounded-0" alt="fish">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold mb-2">Liked by Bootstrap5,html and 35 others</p>
+                                    <div class="card-text">Widely known to live in anemones, it is still not clear how
+                                        clownfish survive the anemone's poison</div>
+                                </div>
+                            </div>
+
+                            <div class="card rounded-0">
+                                <div class="card-header d-flex justify-content-between bg-white">
+                                    <div class="fw-bold">Beyond the sea</div>
+                                    <div>09/10</div>
+                                </div>
+                                <img src="../media/picture_turtle_three.jpg" class="card-img-top rounded-0"
+                                    alt="turtle">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold mb-2">Liked by Crush, Dory and 78 others</p>
+                                    <div class="card-text">There are only 7 species of sea turtles: Leatherback, Green
+                                        Turtle, Hawksbill, Loggerhead, Olive Ridley, Kemp's Ridley and Flatback.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card rounded-0">
+                                <div class="card-header d-flex justify-content-between bg-white">
+                                    <div class="fw-bold">Did you know ...?</div>
+                                    <div>09/10</div>
+                                </div>
+                                <img src="../media/picture_flower_four.jpg" class="card-img-top rounded-0" alt="flower">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold mb-2">Liked by mistias, abee and 101 others</p>
+                                    <div class="card-text">There are over 25,000 species of orchids, and some can live
+                                        up to
+                                        100 years!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card rounded-0">
+                                <div class="card-header d-flex justify-content-between bg-white">
+                                    <div class="fw-bold">Sunset at 6</div>
+                                    <div>09/10</div>
+                                </div>
+                                <img src="../media/picture_sunset_five.jpg" class="card-img-top rounded-0" alt="beach">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold mb-2">Liked by afish, thebeach and 5 others</p>
+                                    <div class="card-text">#beach#sunset#vacation#relax#notedited
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card rounded-0">
+                                <div class="card-header d-flex justify-content-between bg-white">
+                                    <div class="fw-bold">Giving a friend a ride</div>
+                                    <div>09/10</div>
+                                </div>
+                                <img src="../media/picture_beach_six.jpg" class="card-img-top rounded-0" alt="pig">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold mb-2">3456 Likes</p>
+                                    <div class="card-text">Named after it's most famous residents, Pig Island is an
+                                        island
+                                        in the Bahamas uninhabited by humans, home to about 20 friendly pigs. Nobody
+                                        knows
+                                        where the pigs came from, but we are glad they are here.
+                                        #pig#just20pigs#noahsarc
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card rounded-0">
+                                <div class="card-header d-flex justify-content-between bg-white">
+                                    <div class="fw-bold">Chrysler Six!</div>
+                                    <div>09/10</div>
+                                </div>
+                                <img src="../media/picture_car_seven.jpg" class="card-img-top rounded-0"
+                                    alt="vintage car">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold mb-2">Liked by toyota, Chrysler and 58 others</p>
+                                    <div class="card-text">A 1926 Chrysler Six Model B-70 #car#vintage#chrysler
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card rounded-0">
+                                <div class="card-header d-flex justify-content-between bg-white">
+                                    <div class="fw-bold">A GOpher</div>
+                                    <div>09/10</div>
+                                </div>
+                                <img src="../media/picture_golang_eight.jpg" class="card-img-top rounded-0"
+                                    alt="golang">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold mb-2">Liked by Google, Android and 10 others</p>
+                                    <div class="card-text">The official mascot for the Go programming language, a
+                                        GOpher! #mascot #google #gophers #punintended
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card rounded-0">
+                                <div class="card-header d-flex justify-content-between bg-white">
+                                    <div class="fw-bold">A TacoCake or CakeTaco?</div>
+                                    <div>09/10</div>
+                                </div>
+                                <img src="../media/picture_cake_nine.jpg" class="card-img-top rounded-0" alt="turtle">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold mb-2">Liked by cooking.com, tacobell and 67 others</p>
+                                    <div class="card-text">Playing 'Is it Cake?' on super easy mode #isitcake #show
+                                        #iliketacos
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
+
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
